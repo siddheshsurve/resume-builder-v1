@@ -16,7 +16,7 @@ function Editor(props) {
         {Object.keys(sections)?.map((key) => (
           <div
             className={`${styles.sections} ${
-              activeSectionKey == key ? styles.active : ""
+              activeSectionKey === key ? styles.active : ""
             }`}
             key={key}
             onClick={() => setActiveSectoinKey(key)}
